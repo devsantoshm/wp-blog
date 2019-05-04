@@ -9,3 +9,8 @@ function blogviajes_styles(){
 }
 
 add_action( 'wp_enqueue_scripts', 'blogviajes_styles' );
+
+//Navegación
+register_nav_menus( array( 
+	'menu_principal' => __( 'Menu Principal', 'blogViajes' )
+ ) );
