@@ -5,8 +5,10 @@
 	<title></title>
 	<?php wp_head(); ?>
 </head>
-<body>
-	<header>
+<body <?php body_class(); //permite dar diferentes clases segun la pagina en la que este ?>>
+	<?php $destacada = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' ); ?>
+	<?php $destacada = $destacada[0]; ?>
+	<header class="site-header" style="background-image: url(<?php echo $destacada; ?>);">
 		<nav class="navegacion">
 			<div class="container">
 				<div class="row">
@@ -17,7 +19,9 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" class="img-responsive">
+						<a href="<?php echo esc_url(home_url('/'))?>">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" class="logo img-responsive">
+						</a>
 					</div>
 					<div class="navbar-right">
 						<?php  
@@ -30,7 +34,16 @@
 						?>
 					</div>
 				</div>
-				
 			</div>
 		</nav>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="titulo">
+						<?php $descripcion = get_bloginfo('description', 'display') ?>
+						<h1 class="site-title"><span><?php echo $descripcion ?></span></h1>
+					</div>
+				</div>
+			</div>
+		</div>
 	</header>

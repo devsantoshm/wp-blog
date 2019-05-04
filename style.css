@@ -8,7 +8,82 @@
 	License: GNU General Public License
 	Tags: Viajes, Blog
 */
+h1,h2,h3,h4,h5{
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+nav.navegacion{
+	background-color: #008fd1;
+}
+nav.navegacion ul{
+	margin-top: 25px;
+}
+nav.navegacion li{
+	margin-bottom: 20px;
+	margin-right: 20px;
+	text-align: center;
+}
+nav.navegacion ul li a{
+	padding: 0;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+nav.navegacion ul li a:hover{
+	background-color: transparent;
+	border: none;
+}
+.navbar-toggle{
+	border: 1px solid #fff;
+}
+.navbar-toggle .icon-bar{
+	background-color: #fff;
+}
+.site-header{
+	height: 600px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding-top: 20px;
+}
 
-body{
-	background-color: red;
+div.titulo{
+	line-height: 1.3;
+	padding: 6px 0;
+	border-left: 20px solid #008fd1;
+	margin: 20px auto;
+}
+div.titulo h1{
+	background-color: #008fd1;
+	padding: 4px 0;
+	color: #fff;
+	display: inline;
+	margin: 0;
+	font-size: 60px;
+}
+div.titulo h1 span{
+	position: relative;
+	left: -10px;
+}
+
+@media (min-width: 768px) {
+	nav.navegacion{
+		padding: 10px 0;
+	}
+	.site-header{
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	.home .site-header{
+		height: 800px;
+	}
+	img.logo{
+		max-width: 400px;
+	}
+	.home div.titulo{
+		margin-top: 200px;
+	}
+	div.titulo{
+		margin-top: 100px;
+	}
 }
