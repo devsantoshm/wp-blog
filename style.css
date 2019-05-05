@@ -8,6 +8,9 @@
 	License: GNU General Public License
 	Tags: Viajes, Blog
 */
+body{
+	background-color: #f2f2f2;
+}
 h1,h2,h3,h4,h5{
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
@@ -86,4 +89,44 @@ div.titulo h1 span{
 	div.titulo{
 		margin-top: 100px;
 	}
+}
+
+/* ULTIMAS ENTRADAS */
+section.contenido .entrada{
+	margin-bottom: 20px;
+}
+div.contenido-entrada{
+	background-color: #fff;
+	padding: 20px;
+	text-align: center;
+	min-height: 220px;
+}
+div.contenido-entrada h3{
+	margin: 0;
+	line-height: 24px;
+	font-family: 'Libre Baskersville', serif;
+	font-size: 16px;
+	margin-bottom: 30px;
+	font-weight: 700;
+}
+div.contenido-entrada p{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+div.contenido-entrada span{
+	font-weight: bold;
+	color: #db008d;
+}
+div.contenido-entrada .btn.btn-success{
+	background-color: #008fd1;
+	color: #fff;
+	border-radius: 0;
+	border: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 11px 50px;
+	transition: all .3s ease; 
+}
+div.contenido-entrada .btn.btn-success:hover{
+	background-color: #0070a3;
 }
