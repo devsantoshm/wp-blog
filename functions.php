@@ -15,8 +15,23 @@ add_action( 'wp_enqueue_scripts', 'blogviajes_styles' );
 
 //Navegación
 register_nav_menus( array( 
-	'menu_principal' => __( 'Menu Principal', 'blogViajes' )
+	'menu_principal' => __( 'Menu Principal', 'blogViajes' ),
+	'sociales_menu' => __( 'Menu Redes Sociales', 'blogViajes' )
  ) );
+
+//Activar widgets
+function blogviajes_widgets(){
+	register_sidebar( array( 
+		'name' => __('Footer widgets'),
+		'id' => 'footer_widget',
+		'description' => 'Widgets para el Footer',
+		'before_widget' => '<div id="%1$s" class="widget col-sm-6 %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>' 
+	) );
+}
+add_action( 'widgets_init', 'blogviajes_widgets' );
 
 // Imagen destacada
 add_theme_support( 'post-thumbnails' );

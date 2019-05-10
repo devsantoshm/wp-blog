@@ -164,3 +164,48 @@ section.categorias-blog div.categoria a{
 	color: #000;
 	text-decoration: none;
 }
+
+footer{
+	background-color: #008fd1;
+	padding: 10px 0 0 0;
+	margin-top: 30px;
+	color: #fff;
+	text-align: justify;
+}
+footer h3{
+	font-size: 22px;
+}
+footer a, footer a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+footer .footer-info{
+	background-color: #004d70;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	margin: 0;
+	padding: 10px 0;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+#social{
+	list-style: none;
+}
+#social li{
+	position: relative;
+	display: inline-block;
+}
+#social li a:before{
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 5px;
+	font-family: 'fontAwesome';
+	font-size: 40px;
+	color: #fff;
+	content: 'f08e';
+	-webkit-font-smoothing: antialiased;
+}
+#social li a[href*="facebool.com"]::before{content:'\f082';}
+#social li a[href*="twitter.com"]::before{content:'\f0d4';}
+#social li a[href*="goolge.plus"]::before{content:'\f081';}
+#social li a[href*="youtube.com"]::before{content:'\f16a';}
