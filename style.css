@@ -130,3 +130,37 @@ div.contenido-entrada .btn.btn-success{
 div.contenido-entrada .btn.btn-success:hover{
 	background-color: #0070a3;
 }
+
+/* POR CATEGORIAS */
+section.categorias-blog div.categoria{
+	text-align: center;
+	background-color: #fff;
+	background-clip: content-box; /* El fondo se dibuja desde donde inicia el contenido. */
+	margin-bottom: 20px;
+}
+section.categorias-blog div.categoria i{
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-size: 50px;
+}
+section.categorias-blog div.categoria:nth-child(1) i{
+	color: #eca300;
+}
+section.categorias-blog div.categoria:nth-child(2) i{
+	color: #008fd1;
+}
+section.categorias-blog div.categoria:nth-child(3) i{
+	color: #db008d;
+}
+section.categorias-blog div.categoria:nth-child(4) i{
+	color: #9800d1;
+}
+section.categorias-blog div.categoria a{
+	font-family: 'Libre Baskersville', serif;
+	margin-bottom: 10px;
+	display: block;
+	text-transform: uppercase;
+	font-size: 28px;
+	color: #000;
+	text-decoration: none;
+}

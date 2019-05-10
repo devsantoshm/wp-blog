@@ -23,4 +23,19 @@
 	</div>
 </section>
 
+<section class="categorias-blog container">
+	<h2 class="text-center">Por Categoría:</h2>
+	<?php $categorias =  get_categories(); ?>
+	<div class="row">
+		<?php foreach ($categorias as $categoria): ?>
+			<div class="col-xs-6 col-md-6 col-lg-3 categoria">
+				<i class="<?php echo $categoria->description; ?>"></i>
+				<a href="<?php echo get_category_link($categoria->cat_ID) ?>">
+					<?php echo $categoria->name; ?>
+				</a>
+			</div>
+		<?php endforeach ?>
+	</div>
+</section>
+
 <?php get_footer();  ?>
