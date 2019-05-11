@@ -17,7 +17,7 @@ get_header();
 			</div>
 		<?php endwhile; ?>
 			<div class="col-sm-4">
-				sidebar aqui
+				<?php get_sidebar(); ?>
 			</div>
 	</div>
 </section>

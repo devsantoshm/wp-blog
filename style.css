@@ -235,3 +235,14 @@ section.contenido{
 	float: right;
 	margin-left: 20px;
 }
+aside.sidebar-widget{
+	padding-top: 20px;
+}
+aside.sidebar-widget li{
+	margin-bottom: 10px;
+}
+aside.sidebar-widget li a,
+aside.sidebar-widget li a:hover{
+	color: #008fd1;
+	text-decoration: none;
+}
