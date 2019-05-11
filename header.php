@@ -40,8 +40,13 @@
 			<div class="row">
 				<div class="col-md-6">
 					<div class="titulo">
-						<?php $descripcion = get_bloginfo('description', 'display') ?>
-						<h1 class="site-title"><span><?php echo $descripcion ?></span></h1>
+						<?php if(is_front_page()): ?>
+							<?php $descripcion = get_bloginfo('description', 'display') ?>
+						    <h1 class="site-title"><span><?php echo $descripcion ?></span></h1>
+						<?php else: ?>
+							<h1 class="site-title"><span><?php echo the_title() ?></span></h1>
+						<?php endif; ?>
+						
 					</div>
 				</div>
 			</div>

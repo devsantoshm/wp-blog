@@ -209,3 +209,29 @@ footer .footer-info{
 #social li a[href*="twitter.com"]::before{content:'\f0d4';}
 #social li a[href*="goolge.plus"]::before{content:'\f081';}
 #social li a[href*="youtube.com"]::before{content:'\f16a';}
+
+/* PAGE SIDEBAR */
+section.contenido{
+	margin-top: 20px;
+}
+.contenido-pagina{
+	padding-bottom: 20px;
+	padding-top: 20px;
+	box-shadow: 768px 0px 0px #d7d7d7;
+	text-align: justify;
+}
+.page-template-page-sidebar-php section.contenido{
+	margin-top: 0;
+}
+.page-template-page-sidebar-php footer{
+	margin-top: 0;
+}
+.alignleft{
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.alignright{
+	float: right;
+	margin-left: 20px;
+}
