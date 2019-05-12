@@ -23,8 +23,7 @@ nav.navegacion ul{
 	margin-top: 25px;
 }
 nav.navegacion li{
-	margin-bottom: 20px;
-	margin-right: 20px;
+	margin-bottom: 10px;
 	text-align: center;
 }
 nav.navegacion ul li a{
@@ -32,6 +31,7 @@ nav.navegacion ul li a{
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 16px;
+	padding: 10px 0;
 }
 nav.navegacion ul li a:hover{
 	background-color: transparent;
@@ -69,9 +69,25 @@ div.titulo h1 span{
 	left: -10px;
 }
 
+nav.navegacion ul li.current_page_item,
+nav.navegacion ul li.current_page_parent{
+	background-color: #004d70;
+}
+
 @media (min-width: 768px) {
 	nav.navegacion{
 		padding: 10px 0;
+	}
+	nav.navegacion li{
+		margin-right: 20px;
+	}
+	nav.navegacion ul li a{
+		padding: 0;
+	}
+	nav.navegacion ul li.current_page_item,
+	nav.navegacion ul li.current_page_parent{
+		border-bottom: 3px solid #fff;
+		background-color: transparent;
 	}
 	.site-header{
 		background-size: cover;
@@ -266,4 +282,33 @@ blockquote:before{
 }
 blockquote p{
 	display: inline;
+}
+
+/* Pagina contacto */
+.pagina-full-width{
+	margin-top: 50px;
+}
+.ninja-forms-required-items{
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 18px;
+}
+.ninja-forms-form-wrap input,
+.ninja-forms-form-wrap textarea{
+	height: 40px!important;
+	border: none!important;
+}
+.ninja-forms-form-wrap textarea{
+	height: 200px!important;
+}
+.text-wrap.label-above label,
+.textarea-wrap.label-above label{
+	font-weight: normal;
+}
+.ninja-forms-form-wrap input[type=submit]{
+	background-color: #0088c6;
+	padding: 10px 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
 }
